@@ -1,0 +1,71 @@
+{
+  "default_action": "ALLOW",
+  "rules": [
+    {
+      "id": 1,
+      "action": "ALLOW",
+      "direction": "outbound",
+      "protocol": "TCP",
+      "src_ip": null,
+      "dst_ip": null,
+      "src_port": null,
+      "dst_port": 80,
+      "description": "Allow HTTP outbound"
+    },
+    {
+      "id": 2,
+      "action": "ALLOW",
+      "direction": "outbound",
+      "protocol": "TCP",
+      "src_ip": null,
+      "dst_ip": null,
+      "src_port": null,
+      "dst_port": 443,
+      "description": "Allow HTTPS outbound"
+    },
+    {
+      "id": 3,
+      "action": "ALLOW",
+      "direction": "outbound",
+      "protocol": "UDP",
+      "src_ip": null,
+      "dst_ip": null,
+      "src_port": null,
+      "dst_port": 53,
+      "description": "Allow DNS outbound"
+    },
+    {
+      "id": 4,
+      "action": "ALLOW",
+      "direction": "inbound",
+      "protocol": "TCP",
+      "src_ip": null,
+      "dst_ip": null,
+      "src_port": null,
+      "dst_port": 22,
+      "description": "Allow SSH inbound"
+    },
+    {
+      "id": 5,
+      "action": "BLOCK",
+      "direction": "inbound",
+      "protocol": "TCP",
+      "src_ip": null,
+      "dst_ip": null,
+      "src_port": null,
+      "dst_port": 23,
+      "description": "Block Telnet inbound"
+    },
+    {
+      "id": 6,
+      "action": "BLOCK",
+      "direction": "inbound",
+      "protocol": "TCP",
+      "src_ip": null,
+      "dst_ip": null,
+      "src_port": null,
+      "dst_port": 3389,
+      "description": "Block RDP inbound"
+    }
+  ]
+}
