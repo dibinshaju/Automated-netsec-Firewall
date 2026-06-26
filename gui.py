@@ -293,7 +293,7 @@ class FirewallGUI(QMainWindow):
         def sniff_loop():
             try:
                 self.sniffing_active = True
-                self._update_sniff_status("● LIVE — capturing real packets")
+                self._update_sniff_status("●LIVE — capturing real packets")
                 sniff(prn=packet_handler, store=False)
             except PermissionError:
                 self._update_sniff_status("⚠ Permission denied — run with sudo for live capture")
@@ -355,7 +355,7 @@ class FirewallGUI(QMainWindow):
         layout = QVBoxLayout(w)
         layout.setSpacing(8)
  
-        self.sniff_status_label = QLabel("⏳ Starting live capture...")
+        self.sniff_status_label = QLabel(" Starting live capture...")
         self.sniff_status_label.setStyleSheet(
             f"color: {FG_SECONDARY}; font-size: 10px; padding: 2px 0px;"
         )
